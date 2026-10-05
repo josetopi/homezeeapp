@@ -1,0 +1,136 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@font-face {font-family:"Plus Jakarta Sans";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/jakarta-400.ttf") format("truetype");}
+@font-face {font-family:"Plus Jakarta Sans";font-style:normal;font-weight:500;font-display:swap;src:url("/fonts/jakarta-500.ttf") format("truetype");}
+@font-face {font-family:"Plus Jakarta Sans";font-style:normal;font-weight:600;font-display:swap;src:url("/fonts/jakarta-600.ttf") format("truetype");}
+@font-face {font-family:"Plus Jakarta Sans";font-style:normal;font-weight:700;font-display:swap;src:url("/fonts/jakarta-700.ttf") format("truetype");}
+@font-face {font-family:"Plus Jakarta Sans";font-style:normal;font-weight:800;font-display:swap;src:url("/fonts/jakarta-800.ttf") format("truetype");}
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #f3eee8;
+  --color-surface: #fffcf8;
+  --color-elevated: #ffffff;
+  --color-fg: #1a1414;
+  --color-muted: #7a6e68;
+  --color-subtle: #a39892;
+  --color-border: #e8dfd6;
+  --color-primary: #ff4458;
+  --color-primary-fg: #fff7f7;
+  --color-like: #1db954;
+  --color-like-fg: #06210f;
+  --color-nope: #ff4458;
+  --color-visit: #2b9dff;
+  --color-visit-fg: #041628;
+  --color-ink: #14110f;
+
+  --color-background: var(--color-surface);
+  --color-foreground: var(--color-fg);
+  --color-card: var(--color-elevated);
+  --color-card-foreground: var(--color-fg);
+  --color-popover: var(--color-elevated);
+  --color-popover-foreground: var(--color-fg);
+  --color-primary-foreground: var(--color-primary-fg);
+  --color-secondary: #f1e9e1;
+  --color-secondary-foreground: var(--color-fg);
+  --color-muted-foreground: var(--color-muted);
+  --color-accent: #f7efe6;
+  --color-accent-foreground: var(--color-fg);
+  --color-destructive: #ff4458;
+  --color-destructive-foreground: #fff7f7;
+  --color-input: #e8dfd6;
+  --color-ring: #ff4458;
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 1.75rem;
+  --radius-3xl: 2rem;
+  --radius: 0.75rem;
+
+  --shadow-card: 0 12px 40px -8px rgb(26 20 20 / 0.28), 0 4px 12px -4px rgb(26 20 20 / 0.12);
+  --shadow-btn: 0 8px 20px -6px rgb(26 20 20 / 0.28);
+  --shadow-stamp: 0 2px 8px rgb(26 20 20 / 0.12);
+
+  --ease-out-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.stamp {
+  pointer-events: none;
+  position: absolute;
+  border: 4px solid currentColor;
+  border-radius: 8px;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0;
+  background: rgb(255 252 248 / 0.72);
+  box-shadow: var(--shadow-stamp);
+}
+
+.phone-shell {
+  min-height: 100dvh;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgb(255 68 88 / 0.08), transparent 55%),
+    var(--color-bg);
+}
+
+.scrim-top {
+  background: linear-gradient(to bottom, rgb(20 14 14 / 0.45), transparent 70%);
+}
+.scrim-bottom {
+  background: linear-gradient(to top, rgb(20 14 14 / 0.72), transparent 65%);
+}
+
+.map-control { min-width:44px; min-height:44px; border-radius:12px; padding:8px 12px; background:var(--color-elevated); color:var(--color-fg); box-shadow:var(--shadow-btn); font-weight:600; }
+.photo-copy {text-shadow:0 1px 8px rgb(0 0 0 / 0.25);}
+.photo-segment {min-height:20px;}
