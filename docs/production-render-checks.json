@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "homezee",
+      "hasCanvas": false,
+      "bodyTextLen": 387,
+      "bodyTextHash": "648f3c29d6966bb0150f550b24dcdcc445b9fe1436878b5e5036bbb553c67c08",
+      "bodyTextPrefix": "homezee Entrar 385 000 € Braga · fotografia ilustrativa LIKE × S",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/homezee-production-smoke.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "homezee",
+      "hasCanvas": false,
+      "bodyTextLen": 387,
+      "bodyTextHash": "648f3c29d6966bb0150f550b24dcdcc445b9fe1436878b5e5036bbb553c67c08",
+      "bodyTextPrefix": "homezee Entrar 385 000 € Braga · fotografia ilustrativa LIKE × S",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/homezee-production-smoke-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/homezee-production-smoke.json"
+}

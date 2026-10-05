@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: homezee
+    runtime: node
+    buildCommand: npm ci --ignore-scripts && npm run build && npm run typecheck
+    startCommand: npm start
+    envVars:
+      - key: HOMEZEE_TARGET
+        value: node
+      - key: VITE_AUTH_ENABLED
+        value: "true"
+      - key: HOMEZEE_DEMO
+        value: "false"
+      - key: BETTER_AUTH_SECRET
+        generateValue: true
+      - key: BETTER_AUTH_URL
+        sync: false
+      - key: DATABASE_URL
+        sync: false

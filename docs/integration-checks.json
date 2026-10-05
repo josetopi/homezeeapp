@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "errors": [],
+  "checks": [
+    "account signup",
+    "onboarding without mandatory filters",
+    "native feed",
+    "map last page",
+    "zoom in/out",
+    "native favorite",
+    "native visit",
+    "Braga portal polling",
+    "mobile no overflow"
+  ],
+  "portalStatus": "Imovirtual\n\n225 000 €\n\nAPARTAMENTO\n\nBraga, Portugal\n\nBraga, Portugal\n\nT2 · 90 m²\n\nAnúncio simulado apenas para verificar a integração.\n\nMODERN\n\nIM\n\nImovirtual\n\nAnunciante\n\nAnúncio de Imovirtual. A disponibilidade e a visita são confirmadas no portal original.\n\nPedir visita no Imovirtual\nDiscover\nGuardados\nMensagens\nVisitas\nPerfil\nGuardado nos favoritos"
+}
